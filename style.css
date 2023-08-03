@@ -35,6 +35,7 @@ h2 {
     font-family: 'Big Shoulders Display', cursive;
     color: var(--headings);
     font-size: 2.66em;
+    text-transform: uppercase;
 }
 
 p {
