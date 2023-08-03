@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --d-cyan: hsl(184, 100%, 22%);
+    --vd-cyan: hsl(179, 100%, 13%);
+    --paragraphe: hsla(0, 0%, 100%, 0.75);
+    --headings: hsl(0, 0%, 95%);
+}
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--headings);
+    font-size: 2.66em;
+}
+
+p {
+    color: var(--paragraphe);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 165%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 307px 307px 307px;
+    margin: 10px;
+    border-radius: 0.6em;
+    overflow: hidden;
+}
+
+.container>div {
+    padding: 3.2em;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info {
+    display: grid;
+    grid-row-gap: 2.66em;
+}
+
+.orange {
+    background-color: var(--orange);
+}
+.dcyan {
+    background-color: var(--d-cyan);
+}
+.vdcyan {
+    background-color: var(--vd-cyan);
+}
+
+button {
+    width: max-content;
+    padding: 1.33em 2.13em;
+    border: 2px solid var(--headings);
+    border-radius: 100em;
+    background-color: var(--headings);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.orangebutton {
+    color: var(--orange);
+}
+
+.orangebutton:hover {
+    color: var(--headings);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.cyanbutton {
+    color: var(--d-cyan);
+}
+
+.cyanbutton:hover {
+    color: var(--headings);
+    background-color: var(--d-cyan);
+    cursor: pointer;
+}
+
+.vdarkbutton {
+    color: var(--vd-cyan);
+}
+
+.vdarkbutton:hover {
+    color: var(--headings);
+    background-color: var(--vd-cyan);
+    cursor: pointer;
+}
+
+@media (max-width:940px) {
+    .container {
+        grid-template-columns: 307px;
+    }
+}
